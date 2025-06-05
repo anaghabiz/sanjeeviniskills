@@ -95,3 +95,13 @@ body {
   text-align: center;
   padding: 20px 0;
 }
+
+.footer a {
+  color: white;
+  text-decoration: underline; /* optional */
+}
+
+.footer a:hover {
+  color: #ddd; /* optional lighter shade on hover */
+}
+
