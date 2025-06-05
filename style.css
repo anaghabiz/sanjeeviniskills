@@ -1,70 +1,106 @@
-:root {
-  --primary: #2f855a;
-  --accent: #d4f5e6;
-  --background: #fffef6;
-  --footer-bg: #1a3b2c;
-  --text-dark: #2d2d2d;
-  --text-light: #ffffff;
-}
+/* style.css */
 
 body {
-  background-color: var(--background);
-  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* Header */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
 .header {
-  background: var(--accent);
+  background: #f4f4f4;
+  padding: 20px 0;
 }
 
-/* Navigation Links */
+.logo {
+  width: 200px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
 .nav-links a {
-  color: var(--primary);
-  font-weight: bold;
-}
-.nav-links a:hover {
-  color: #1a3b2c;
+  text-decoration: none;
+  color: #333;
 }
 
-/* Hero Section */
 .hero {
-  background: var(--primary);
-  color: var(--text-light);
+  background: #e2e2e2;
+  padding: 60px 0;
+  text-align: center;
 }
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
 .btn {
-  background: var(--accent);
-  color: var(--primary);
-  border: none;
-}
-.btn:hover {
-  background: #b8ecd4;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Cards (Programs) */
+.about, .programs, .impact {
+  padding: 40px 0;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .program {
-  background: #ffffff;
-  border: 1px solid var(--primary);
-  transition: box-shadow 0.3s ease;
-}
-.program:hover {
-  box-shadow: 0 0 10px rgba(47, 133, 90, 0.2);
+  flex: 1 1 45%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-/* Footer */
+.impact-stats {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.impact-stats li {
+  flex: 1 1 45%;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
 .footer {
-  background-color: var(--footer-bg);
-  color: var(--text-light);
-}
-.footer a {
-  color: var(--text-light);
-}
-.footer a:hover {
-  color: #b8ecd4;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
 }
 
-h2 {
-  border-left: 4px solid var(--primary);
-  padding-left: 10px;
-  margin-bottom: 1rem;
-  color: var(--primary);
+.footer a {
+  color: white;
+  text-decoration: underline; /* optional */
+}
+
+.footer a:hover {
+  color: #ddd; /* optional lighter shade on hover */
 }
