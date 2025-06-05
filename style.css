@@ -1,5 +1,4 @@
-/* style.css */
-
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -15,7 +14,7 @@ body {
   padding: 20px 0;
 }
 
-/* Header layout and alignment */
+/* Header */
 .header {
   background: #f4f4f4;
 }
@@ -27,25 +26,20 @@ body {
   padding: 10px 20px;
 }
 
-/* Logo style */
+/* Logo in Header */
 .logo {
   height: 120px;
   width: auto;
   object-fit: contain;
-  padding: 40px;
 }
 
-/* Navigation styles */
+/* Nav Menu */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.2rem;
   margin: 0;
   padding: 0;
-}
-
-.nav-links li {
-  margin: 0;
 }
 
 .nav-links a {
@@ -82,11 +76,29 @@ body {
   border-radius: 5px;
 }
 
-/* About, Programs, Impact */
+/* About Section with Logo Alignment */
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.about-content {
+  flex: 1;
+}
+
 .about, .programs, .impact {
   padding: 40px 0;
 }
 
+/* Program Cards */
 .program-list {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +112,7 @@ body {
   border-radius: 5px;
 }
 
+/* Impact Section */
 .impact-stats {
   list-style: none;
   display: flex;
@@ -131,3 +144,21 @@ body {
   color: #ddd;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container,
+  .about-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-logo {
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
