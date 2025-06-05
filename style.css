@@ -104,3 +104,12 @@ body {
 .footer a:hover {
   color: #ddd; /* optional lighter shade on hover */
 }
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Georgia', serif;
+  color: var(--primary);
+  margin: 0;
+}
+
