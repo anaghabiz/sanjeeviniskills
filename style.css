@@ -12,41 +12,55 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  overflow: hidden;
   padding: 20px 0;
 }
 
+/* Header layout and alignment */
 .header {
   background: #f4f4f4;
-  padding: 10px 0; 
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
 }
 
-
+/* Logo style */
 .logo {
-  width: 200px;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
 }
 
+/* Navigation styles */
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-  margin-left: 20px;
+  margin: 0;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
-  padding: 0.5rem 1rem; /* Reduced padding */
-  font-size: 1rem;       /* Adjust font size as needed */
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
+.nav-links a:hover {
+  color: #1a3b2c;
+}
 
+/* Hero Section */
 .hero {
   background: #e2e2e2;
   padding: 60px 0;
@@ -60,11 +74,14 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #333;
+  background: #000;
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
+/* About, Programs, Impact */
 .about, .programs, .impact {
   padding: 40px 0;
 }
@@ -96,6 +113,7 @@ body {
   border-radius: 5px;
 }
 
+/* Footer */
 .footer {
   background: #333;
   color: #fff;
@@ -105,26 +123,10 @@ body {
 
 .footer a {
   color: white;
-  text-decoration: underline; /* optional */
+  text-decoration: underline;
 }
 
 .footer a:hover {
-  color: #ddd; /* optional lighter shade on hover */
+  color: #ddd;
 }
-
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: 'Georgia', serif;
-  color: var(--primary);
-  margin: 0;
-}
-
-.logo {
-  height: 120px; /* Adjust to desired size */
-  width: auto;
-  object-fit: contain;
-}
-
-
 
