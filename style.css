@@ -19,7 +19,11 @@ body {
 .header {
   background: #f4f4f4;
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 .logo {
   width: 200px;
@@ -38,7 +42,10 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #333;
+  padding: 0.5rem 1rem; /* Reduced padding */
+  font-size: 1rem;       /* Adjust font size as needed */
 }
+
 
 .hero {
   background: #e2e2e2;
@@ -114,9 +121,10 @@ body {
 }
 
 .logo {
-  height: 64px;
+  height: 80px; /* Adjust to desired size */
   width: auto;
   object-fit: contain;
 }
+
 
 
