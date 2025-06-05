@@ -113,3 +113,10 @@ body {
   margin: 0;
 }
 
+.logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+
