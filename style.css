@@ -1,5 +1,5 @@
 :root {
-  --seeds-green: #145A32;
+  --seeds-green: #A9DFBF;
   --light-text: #ffffff;
 }
 
@@ -74,7 +74,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #000;
+  background: var(--seeds-green);
   color: #fff;
   text-decoration: none;
   font-weight: bold;
