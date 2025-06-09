@@ -164,6 +164,31 @@ body {
   transform: scale(1.05);
 }
 
+.director-message {
+  background-color: #e6f4ea; /* light green background */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.director-message h2 {
+  color: #145a32; /* deep green */
+  margin-bottom: 1rem;
+}
+
+.director-message p {
+  max-width: 800px;
+  margin: 0 auto 1.2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.director-name {
+  font-weight: bold;
+  font-style: italic;
+  color: #2d572c;
+}
+
+
 /* Footer */
 .footer {
   background-color: var(--seeds-green);
