@@ -134,34 +134,28 @@ body {
 
 
 .gallery {
-  background-color: #f0fdf4;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .gallery h2 {
-  text-align: center;
   margin-bottom: 2rem;
-  color: #145A32; /* Brand green */
+  color: #145a32;
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .gallery-grid img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .director-message {
