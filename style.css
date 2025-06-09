@@ -62,7 +62,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: #e2e2e2;
+  background: #e6f4ea;
   padding: 60px 0;
   text-align: center;
 }
@@ -74,7 +74,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: var(--seeds-green);
+  background: #000;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
