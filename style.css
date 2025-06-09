@@ -158,6 +158,34 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
 .director-message {
   background-color: #e6f4ea; /* light green background */
   padding: 3rem 1rem;
